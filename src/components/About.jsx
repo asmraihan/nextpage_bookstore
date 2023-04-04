@@ -40,7 +40,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className='max-w-screen-xl sm:mx-auto'>
+      {/* <div className='max-w-screen-xl sm:mx-auto'>
         <div className='grid grid-cols-1 gap-16 row-gap-8 lg:grid-cols-2'>
           <div className='space-y-8'>
             <div>
@@ -126,7 +126,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

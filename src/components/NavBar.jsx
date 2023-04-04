@@ -40,7 +40,7 @@ return (
           <li>
             <NavLink
               to='/about'
-              className={({ isActive }) => (isActive ? 'text-blue-800' : 'default')}
+              className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               About us
             </NavLink>
