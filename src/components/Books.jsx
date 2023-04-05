@@ -1,12 +1,19 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData,useNavigation } from 'react-router-dom';
 import Card from './Card';
+import LoadingSpinner from './LoadingSpinner';
 
 const Books = () => {
+
+    const navigation = useNavigation();
+    // console.log(navigation.state)
+    if(navigation.state === 'loading'){
+        return <LoadingSpinner></LoadingSpinner>
+    }
     /* prev method e ekhane useState ar useEffect use kore api load kortm */
     // const booksData = useLoaderData() /* destructuring next line */
     const {books} = useLoaderData()
-    console.log(books)
+    // console.log(books)
 
     return (
         <div className='my-container'>
